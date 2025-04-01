@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Use the font inspired by the image */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9F3E6; /* Background color inspired by the image */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace; /* Header font inspired by the image */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline; /* Hover effect for the navigation links */
+}
+
+.mobile-menu {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Introduction Section Styles */
+.intro-section {
+    padding: 100px 0;
+    background-color: #F9F3E6;
+    text-align: center;
+}
+
+.intro-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: inline-block;
+    border-left: 10px solid #1C4EDA; /* Inspired by the blue border from the image */
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#more-content.hidden {
+    display: none;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.social-links p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-links i {
+    margin-right: 10px;
+    color: #555;
+}
+
+#read-more-btn {
+    margin-top: 10px;
+    background-color: #1C4EDA; /* Button color inspired by the image */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#read-more-btn:hover {
+    background-color: #333;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    padding: 50px 0;
+    background-color: #F9F3E6;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .project-box {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 50px 0;
+    background-color: #F9F3E6;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+   
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    background-color: #1C4EDA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Social Footer Section Styles */
+.social-footer {
+    padding: 20px 0;
+    background-color: #333;
+    text-align: center;
+}
+
+.social-footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-footer .social-links p {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.social-footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .intro-section {
+        padding: 80px 20px;
+    }
+
+    .social-links p {
+        font-size: 14px;
+    }
+}

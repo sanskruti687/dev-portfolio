@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="sanskrutipawar.pdf" target="_blank">Resume</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">Menu</div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about" class="intro-section">
+        <div class="container">
+            <div class="intro-box">
+                <h1>Hey, I'm Sanskruti Pawar 👋</h1>
+                <p class="intro-text">
+                    A <strong>Bachelor of Engineering student in Information Technology</strong>, currently studying at Savitribai Phule Pune University (SPPU), and pursuing my degree at Sinhgad Institute of Technology and Science, Pune. My academic journey began with a diploma in Information Technology from Sou. Venutai Chavan Polytechnic, where I deepened my knowledge of technology and actively participated in state and national-level competitions 🎯.
+                </p>
+                <div id="more-content" class="hidden">
+                    <p>Over the past year, I have been diligently laying the foundation for my career by expanding my expertise in DevOps practices and tools. My goal is to continuously learn and master new skills, especially in emerging technologies, so I can contribute effectively to innovative projects.
+
+                    In addition to my technical pursuits, I have a passion for reading and writing poetry, which fuel my creativity and problem-solving abilities.📚</p>
+                </div>
+                <button id="read-more-btn">Read More</button>
+                
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-box">Project 1</div>
+                <div class="project-box">Project 2</div>
+                <div class="project-box">Project 3</div>
+                <div class="project-box">Project 4</div>
+                <div class="project-box">Project 5</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me Here!</h2>
+            <p>Drop me a line by using the form below.</p>
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Footer Section -->
+    <footer class="social-footer">
+        <div class="container">
+            <div class="social-links">
+                <p><a href="https://www.linkedin.com/in/SanskrutipawarSinhgad" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+                <p><a href="https://github.com/sanskruti687" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
